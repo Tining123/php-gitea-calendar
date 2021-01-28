@@ -79,3 +79,7 @@ Finally, thanks to Gitea to allow me install git management in my slightly raspe
 我才用的爬虫工具是php simple dom parse，很好用并且代码简洁.
 
 最后由衷感谢Gitea，可以让我孱弱的树莓派拥有一个Git仓库
+
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Tining123/php-gitea-calendar/blob/main/LICENSE) file for the full license text.
