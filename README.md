@@ -14,7 +14,7 @@ git clone https://github.com/Tining123/php-gitea-calendar.git
 ## Import / 引用
 ### Step 1
 
-*   #### Configurate the src/config.php whit your url. Like the following style
+*   #### Configurate the src/config.php whit your url. Like the following style.
 
     #### 请配置src/config.php文件中的url，格式如下
 ```html
@@ -33,12 +33,16 @@ $url = "http://192.168.0.197:7006/api/v1/users/Tining/heatmap";
 
 ### Step 3
 
-*   #### include the content.php in any where you want to output the calendar
+*   #### include the content.php in any where you want to output the calendar.
 
     #### 在任意想要输出日历的地方引用content.php
 ```html
 include("content.php");
 ```
+
+More example please check the src/index.php file.
+更多样例请参考src/index.php文件
+
 
 ### Finish! Enjoy your Gitea calendar
 ### 完成！请享用你的Gitea日历
