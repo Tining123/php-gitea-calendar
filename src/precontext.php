@@ -18,7 +18,6 @@ function output($color_array, $color_set){
 $postfix = '</g></svg>
 </div>
 <div class="contrib-footer clearfix mt-1 mx-3 px-3 pb-1">
-    <div class="float-left text-gray">Summary of pull requests, issues opened, and commits made by <a href="https://gitea.com" target="blank">@Tining</a></div>
     <div class="contrib-legend text-gray" title="A summary of pull requests, issues opened, and commits to the default and gh-pages branches.">
     Less
         <ul class="legend">
