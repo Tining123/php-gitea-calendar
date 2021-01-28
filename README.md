@@ -1,5 +1,5 @@
 ![pic](https://github.com/Tining123/php-gitea-calendar/blob/main/doc/show.png)
-##php-gitea-calendar
+## php-gitea-calendar
 A php version of the git clalendar but for gitea. You could embed it everywhere!
 
 一个PHP版本的GitHub的编程日历，不过是针对Gitea的编程日历！
