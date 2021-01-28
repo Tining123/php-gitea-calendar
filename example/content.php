@@ -59,10 +59,7 @@ for($now = $firstday; $now < $today; $now = strtotime("+1 day",$now)){
 }
 
 
+include("precontext.php");
+print(output($color_array, $color_set));
 
-
-// extract text from HTML
-#echo $html->plaintext;
-#$item = 1611754200;
-#echo date('r',$item);
 ?>

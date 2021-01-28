@@ -17,8 +17,6 @@
             ></script>
             <?php
                 include("content.php");
-                include("precontext.php");
-                print(output($color_array, $color_set));
             ?>
         </div>
     </body>
