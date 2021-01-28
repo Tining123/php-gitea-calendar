@@ -40,5 +40,38 @@ $url = "http://192.168.0.197:7006/api/v1/users/Tining/heatmap";
 include("content.php");
 ```
 
-## Finish! Enjoy your Gitea calendar
-## 完成！请享用你的Gitea日历
+### Finish! Enjoy your Gitea calendar
+### 完成！请享用你的Gitea日历
+
+
+## Development / 开发
+### Expand this project to others language / 使用其他语言改写此项目
+
+Please keep the css/js/dist directory. This file keep the appearance of the calendar
+
+请保留css/js/dist三个目录，这支撑了基础的日历外观
+
+### Developing for others git platform / 将本项目更改以适配其他种类git仓库
+Gitlab,Gogs...
+
+Please edit the src/content.php file. Here is the major analysis fucntion. Almost every sentens has been commented.
+
+请直接修改 src/content.php文件。这里是主要的分析文件，几乎所有的语句都已经双语注释
+
+## Thanks / 感谢
+* [github-calendar](https://github.com/Bloggify/github-calendar)
+* [php-simple-html-dom-parser](https://github.com/sunra/php-simple-html-dom-parser)
+* [gitea](https://github.com/go-gitea/gitea)
+
+This project was inspire by the github-calendar. However, the analysis file(javascript) was encode and hard to read. To support the Gitea.
+I need to rewrite the ajax. However, I was stuck by the 'Access-Control-Allow-Origin'. So I decide to do it in the backend.
+
+The spider tools I choosed is php simple html dom parser. It is a simple framwork having clear code style.
+
+Finally, thanks to Gitea to allow me install git management in my slightly raspeberry pi.
+
+这个项目是由github-calendar启发的，然而，github-calendar不支持Gitea并且压缩过后的JavaScript文件对我来说难以阅读。我需要重写ajax通信。可惜的是，Gitea的接口似乎有跨域问题，为了更快的解决，我决定用后端采纳数据
+
+我才用的爬虫工具是php simple dom parse，很好用并且代码简洁.
+
+最后由衷感谢Gitea，可以让我孱弱的树莓派拥有一个Git仓库
