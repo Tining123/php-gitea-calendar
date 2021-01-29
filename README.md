@@ -76,7 +76,7 @@ Finally, thanks to Gitea to allow me install git management in my slightly raspe
 
 这个项目是由github-calendar启发的，然而，github-calendar不支持Gitea并且压缩过后的JavaScript文件对我来说难以阅读。我需要重写ajax通信。可惜的是，Gitea的接口似乎有跨域问题，为了更快的解决，我决定用后端采纳数据
 
-我才用的爬虫工具是php simple dom parse，很好用并且代码简洁.
+我采用的爬虫工具是php simple dom parse，很好用并且代码简洁.
 
 最后由衷感谢Gitea，可以让我孱弱的树莓派拥有一个Git仓库
 
