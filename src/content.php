@@ -81,6 +81,6 @@ for($now = $firstday; $now < $today; $now = strtotime("+1 day",$now)){
 
 
 include("precontext.php");
-print(output($color_array, $color_set));
+print(output($color_array, $color_set,$month_set,$firstday));
 
 ?>

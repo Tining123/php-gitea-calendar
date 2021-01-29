@@ -7,7 +7,46 @@ $color_set[2] = 'var(--color-calendar-graph-day-L2-bg)';
 $color_set[3] = 'var(--color-calendar-graph-day-L3-bg)';
 $color_set[4] = 'var(--color-calendar-graph-day-L4-bg)';
 
-function output($color_array, $color_set){
+$month_set[0] = "Jan";
+$month_set[1] = "Feb";
+$month_set[2] = "Mar";
+$month_set[3] = "Apr";
+$month_set[4] = "May";
+$month_set[5] = "Jun";
+$month_set[6] = "Jul";
+$month_set[7] = "Aug";
+$month_set[8] = "Sep";
+$month_set[9] = "Oct";
+$month_set[10] = "Nov";
+$month_set[11] = "Dec";
+
+function output_month($month_set,$begin_index)
+{
+    $begin = ((int)date('m',$begin_index));
+    $str ='<text x="27" y="-7" class="month">'.($month_set[($begin) % 12]).'</text>
+    <text x="79" y="-7" class="month">'.($month_set[($begin+1) % 12]).'</text>
+    <text x="144" y="-7" class="month">'.($month_set[($begin+2) % 12]).'</text>
+    <text x="196" y="-7" class="month">'.($month_set[($begin+3) % 12]).'</text>
+    <text x="261" y="-7" class="month">'.($month_set[($begin+4) % 12]).'</text>
+    <text x="313" y="-7" class="month">'.($month_set[($begin+5) % 12]).'</text>
+    <text x="365" y="-7" class="month">'.($month_set[($begin+6) % 12]).'</text>
+    <text x="430" y="-7" class="month">'.($month_set[($begin+7) % 12]).'</text>
+    <text x="482" y="-7" class="month">'.($month_set[($begin+8) % 12]).'</text>
+    <text x="534" y="-7" class="month">'.($month_set[($begin+9) % 12]).'</text>
+    <text x="599" y="-7" class="month">'.($month_set[($begin+10) % 12]).'</text>
+    <text x="651" y="-7" class="month">'.($month_set[($begin+11) % 12]).'</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="8" style="display: none;">Sun</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="22">Mon</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="32" style="display: none;">Tue</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="48">Wed</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="57" style="display: none;">Thu</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="73">Fri</text>
+    <text text-anchor="start" class="wday" dx="-7" dy="81" style="display: none;">Sat</text>';
+
+    return $str;
+}
+
+function output($color_array, $color_set,$month_set, $firstday){
 
     $prefix = '<div class="calendar">
 <div class="border py-2 graph-before-activity-overview">
@@ -80,5 +119,5 @@ $postfix = '</g></svg>
 	    $x = $x-1;
 		
     }
-    return $prefix.$str.$postfix;
+    return $prefix.$str.'</g>'.output_month($month_set,$firstday).$postfix;
 }
